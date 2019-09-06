@@ -6,4 +6,5 @@ class iso _TestHillclimber is UnitTest
     fun name(): String => "Test Hillclimber"
 
     fun apply(h: TestHelper) =>
-        let hillclimbing = Hillclimbing.create()
+        let cf:ArrayCandidateFactory = ArrayCandidateFactory.create()
+        let hillclimbing = Hillclimbing.create(cf)
